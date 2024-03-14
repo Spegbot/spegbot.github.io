@@ -1,0 +1,231 @@
+@font-face { font-family: "homelike"; src: url("../../../dist/police/Homelike.ttf"); }
+@font-face { font-family: "nerko one"; src: url("../../../dist/police/NerkoOne.ttf"); }
+
+
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+
+body{ height: 100vh; color: white; background: linear-gradient(to right, rgba(8, 226, 95, 0.123),rgba(4, 136, 56, 0.612)), url("../../../img/gg.jpg");
+    background-size: cover; background-position: center center;}
+
+h1{ font-family: "homelike";}
+h3{ font-family: "nerko one"; color: rgb(8, 226, 95);}
+h4{ color: rgb(8, 226, 95); }
+
+
+
+:root{
+    --colorbase : rgb(8, 226, 96);
+    --gris : rgba(234, 5, 5, 0.534);
+    --colorsuite : rgb(212, 164, 30);
+}
+
+/* differnet image de nos chambre */
+.qlq_img{
+    padding: 20px;
+}
+.offcanvas-body, .offcanvas-header{
+    background-color: black;
+}
+/* -------------------- */
+
+.containere{ 
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 20px #dbdbdb;
+}
+.palette{
+    display: flex;
+    height: 86%;
+    width: 100%;
+}
+.img{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 3px;
+    transition: flex 0.1s linear;
+}
+.img span{
+    opacity: 0;
+    transition: opacity 0.1s linear;
+    text-shadow: 0 0 10px black;
+}
+.img:nth-child(1){
+    background: url(../../../img/img_chambre/bckgrd/un.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img:nth-child(2){
+    background: url(../../../img/img_chambre/bckgrd/deux.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img:nth-child(3){
+    background: url(../../../img/img_chambre/bckgrd/trois.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img:nth-child(4){
+    background: url(../../../img/img_chambre/bckgrd/quatre.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img:nth-child(5){
+    background: url(../../../img/img_chambre/bckgrd/cinq.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img:hover{
+    flex: 3;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.img:hover span{
+    opacity: 1;
+}
+#start{
+    height: 14%;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5em;
+    box-sizing: border-box;
+    color: #9c9c9c;
+}
+#start a{
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: var(--colorbase);
+    color: white;
+    transition: all 0.3s linear;
+}
+#start a:hover{
+    color: var(--colorbase);
+    background-color: white;
+    border: 1px solid var(--colorbase);
+}
+
+/* -------------------- */
+
+/* div affiche */
+.pr{
+    padding: 25px;
+    border-bottom: 1px solid #00000025;
+}
+
+/* nos chambre */
+.categorie{padding: 20px; background-color: rgba(73, 72, 72, 0.144);}
+.categorie aside img{
+    width: 100%;
+}
+.categorie aside{
+    background-color: white;
+    width: 350px;
+    margin:0 20px;
+    box-sizing: 0 0 5px var(--gris);
+}
+.categorie article{
+    display: flex;
+    justify-content: space-between;
+}
+.about{
+    padding: 20px;
+}
+/* ----------------------------------------------------------------------------- */
+
+.carde-container{
+    width: 350px;
+    height: 230px;
+    position: relative;
+}
+.carde{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    overflow: hidden;
+}
+.carde .content{
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: #e8e8e8;
+    text-shadow: 0 0 10px black;
+    padding: 20px 24px;
+    line-height: 1.5;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(50px);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+.carde .content .heading{
+    font-size: 32px;
+    font-weight: 700;
+}
+.carde:hover .content{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+
+/* decoration button */
+.button{
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;    
+    border: none;
+    background-color: var(--colorbase);
+    color: white;
+    font-weight: bolder;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 13px;
+}
+.button, .button_text, .button_icon{
+    transition: all 0.3s;
+}
+.button .button_text{
+    transform: translateX(25px);
+    color: #fff;
+    font-weight: 600;
+}
+.button .button_icon{
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: var(--colorbase);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button .svg{
+    font-size: 30px;
+}
+.button:hover .button_text{
+    color: transparent;
+}
+.button:hover .button_icon{
+    width: 100%;
+    transform: translateX(0);
+}
+.button_icon{
+    border-left: 1px solid #ffffff63;
+}
+

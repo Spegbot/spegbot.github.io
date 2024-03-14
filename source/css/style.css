@@ -1,0 +1,138 @@
+@font-face { font-family: "homelike"; src: url("../../dist/police/Homelike.ttf"); }
+@font-face { font-family: "nerko one"; src: url("../../dist/police/NerkoOne.ttf"); }
+
+
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+
+
+body{ height: 100vh; overflow: hidden; color: white; background: linear-gradient(to right, rgba(8, 226, 95, 0.123),rgba(4, 136, 56, 0.612)), url("../../img/bg.jpg") ; background-position: center; background-size: cover; }
+
+
+h1{ font-family: "homelike"; letter-spacing: .3rem; }
+h3, h4{ font-family: "nerko one"; }
+h4{ color: rgb(8, 226, 95); }
+
+
+.title{
+    font-family: sans-serif;
+    letter-spacing: .1rem;
+}
+.font-black{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.col-gauche, .col-droite{
+    height: 100vh;
+    position: relative;
+}
+.col-gauche{
+    display: flex;
+    justify-content: center;align-items: center;
+    text-align: center;
+}
+.top, .buttom{
+    height: 50%;
+    background-color: rgba(8, 226, 95, 0.473);
+    position: relative;
+    overflow: hidden;
+}
+.top{
+    border-bottom-left-radius: 300px ;
+}
+.buttom{
+    border-top-left-radius: 300px ;
+}
+.center-nav{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100vh;
+    display: flex;align-items: center;
+}
+.content button{
+    font-weight: 500;
+    border-style: none;
+    background: rgba(0, 255, 213, 0.272);
+    color: white;
+}
+.content button:hover{
+    background-color: green;
+}
+
+
+/* localisation */
+.popover-header{
+    color: black;
+}
+.location{
+    position: absolute;width: 40px;height: 40px;bottom: 10px;left: 90px;border-radius: 50%;
+    background-color: white;color: black;border: none;
+    display: flex;justify-content: center;align-items: center;
+    animation: topBottom 1500ms ease-in-out infinite;
+    transition: 360ms;
+    background-size: cover;
+    background-position: center center;
+}
+.location:active{
+    color: blue;
+}
+
+/* image arrondu de l'acceuil */
+.img-home{
+    position: absolute;
+    top: 28%;
+    left: 10px;
+}
+
+/* reseaux social */
+.nav{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5px 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 0 9px #0000003b;
+}
+.nav i{
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+}
+.nav i:hover{
+    color: green;
+}
+.parent{
+    animation: Scale 1200ms ease-in-out 1;
+}
+.text-bg-dark {
+    background-color: rgba(0, 0, 0, 0.651);
+}
+/* animations */
+@keyframes Scale{
+    from {
+    transform: scale3d(1, 1, 1);
+}
+
+10%, 20% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+}
+
+30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+}
+
+40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+}
+}
+
+@keyframes topBottom {
+    0%{
+        transform: translateY(0);
+    }50%{
+        transform: translateY(-10px);
+    }100%{
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,41 @@
+@font-face { font-family: "homelike"; src: url("../../dist/police/Homelike.ttf"); }
+@font-face { font-family: "nerko one"; src: url("../../dist/police/NerkoOne.ttf"); }
+
+body{ height: 100vh; color: white; background: linear-gradient(to right, rgba(8, 226, 95, 0.123),rgba(4, 136, 56, 0.612)), url("../../img/gg.jpg");
+background-size: cover; background-position: center center;}
+
+h1{ font-family: "homelike"; }
+h3{ font-family: "nerko one"; color: rgb(8, 226, 95);text-shadow: 2px 2px 10px black;}
+
+.block-contenu{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 77vh;
+}
+.block{
+    width: 100%;
+    background: #0000006f;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 360ms;
+    box-shadow: 2px 2px 10px rgb(21, 21, 21);
+}
+.list-group-item{
+    background-color: none;
+    border: none;
+}
+
+.text-bg-dark {
+    background-color: rgba(0, 0, 0, 0.651);
+}
+
+.notify{
+    max-width: 700px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+.scroll{
+    height: 77vh;
+    overflow-y: auto;
+}

@@ -1,0 +1,87 @@
+@font-face { font-family: "homelike"; src: url("../../dist/police/Homelike.ttf"); }
+@font-face { font-family: "nerko one"; src: url("../../dist/police/NerkoOne.ttf"); }
+
+
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+
+body{ height: 100vh; color: white; background: linear-gradient(to right, rgba(8, 226, 95, 0.123),rgba(4, 136, 56, 0.612)), url("../../img/gg.jpg");
+    background-size: cover; background-position: center center; overflow: hidden;}
+
+h1{ font-family: "homelike";}
+h3{ font-family: "nerko one"; color: rgb(8, 226, 95);}
+h4{ color: rgb(8, 226, 95); }
+
+.block-contenu{
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 77vh;
+}
+
+:root{
+  
+  --gris : rgb(183, 183, 183);
+  --colorsuite : rgba(8, 226, 95, 0.486);
+}
+
+.offcanvas-body, .offcanvas-header{
+  background-color: black;
+}
+
+
+/* Formulaire */
+
+label{
+  font-weight: 700;
+  color: var(--gris);
+}
+input,  select{
+  border: 1px solid var(--gris);
+  padding: 6px;
+  width: 100%;
+  margin: 5px 0;
+  outline-color:  rgb(48, 158, 48);
+  border-radius: 5px;
+  background-color: #0000000c;
+}
+.res{
+  background-color: rgb(48, 158, 48);
+  color: white;
+  padding: 10px;
+  width: 200px;
+  margin: 10px 0;
+  font-weight: 900;
+  border-radius: 30px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+}
+.res:hover{
+  color: rgb(48, 158, 48) ;
+  box-shadow: 0 0 5px var(--colorsuite);
+}
+
+.text-bg-dark {
+  background-color: rgba(0, 0, 0, 0.651);
+}
+.res:after{
+  content: "";
+  background-color: white;
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0,1);
+  transition: all 0.5s;
+}
+.res:hover::after{
+  transform: skewX(-45deg) scale(1,1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+
+/* footer */
