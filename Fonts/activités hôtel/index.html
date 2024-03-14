@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Activités de l'hôtel</h1>
+
+  <div id="login" style="display: none;">
+    <h2>Identifiez-vous</h2>
+    <input type="text" id="username" placeholder="Nom d'utilisateur">
+    <input type="password" id="password" placeholder="Mot de passe">
+    <button onclick="login()">Se connecter</button>
+  </div>
+
+ <div class="container">
+  <div class="row">
+      <div id="activities">
+        <h2>Nos Activités</h2>
+        <div class="activity" onclick="showActivityDetails()">
+          <div class="col-md-4">
+          <h3>Restaurant gastronomique</h3>
+          <p>Dégustez une cuisine raffinée dans notre restaurant étoilé.</p>
+          <img src="image 6.jpeg" alt="Activité 1">
+          <p>Venez découvrir notre carte de plats gastronomiques préparés avec soin par notre chef étoilé. Nous utilisons des ingrédients frais et de qualité pour vous offrir une expérience culinaire unique. Réservez dès maintenant votre table pour une soirée inoubliable !</p>
+          </div>
+        </div>
+      </div>
+        <div class="activity" onclick="showActivityDetails()">
+          <h3>Spa et bien-être</h3>
+          <img src="image 9.jpeg" alt="Activité 2">
+          <p>Profitez dun moment de détente dans notre spa haut de gamme, équipé dinstallations modernes et de professionnels expérimentés. Nous proposons une gamme de soins pour le corps et lesprit, allant des massages aux soins du visage, en passant par la balnéothérapie. Réservez dès maintenant votre séance de relaxation !</p>
+        </div>
+        
+        <div class="activity" onclick="showActivityDetails()">
+          <h3>Centre de remise en forme</h3> 
+          <p>Restez actif et en forme dans notre centre de remise en forme ultramoderne.</p>
+          <img src="image 11.jpeg" alt="Activité 3">
+          <p>Notre centre de remise en forme propose une variété déquipements de pointe pour vous aider à atteindre vos objectifs de fitness. Que vous soyez débutant ou athlète chevronné, notre équipe de professionnels est là pour vous guider et vous encourager. Inscrivez-vous dès maintenant pour commencer votre parcours de remise en forme !</p>
+        
+        </div>
+      </div>
+    
+    
+  </div>
+ </div>
+  <div id="activityDetails" style="display: none;">
+    <h2>Détails de lactivité </h2>
+    <h3 id="selectedActivity"></h3>
+    <p>Contenu de lactivité...</p>
+    <button onclick="showRegistrationForm()">Sinscrire</button>
+  </div>
+
+  <div id="registrationForm" style="display: none;">
+    <h2>Inscription</h2>
+    <input type="text" id="fullName" placeholder="Nom complet">
+    <input type="email" id="email" placeholder="Adresse email">
+    <button onclick="register()">S'inscrire à l'activité</button>
+  </div>
+
+  <script src="script.js"></script>
+
+ <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
