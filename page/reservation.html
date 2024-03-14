@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="../source/css/reservation.css">
+    <link rel="stylesheet" href="../dist/css/all.css">
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+</head>
+<body>
+
+
+    <div class="block container">
+      <div class="mt-5">
+
+        <h1><span class="text-warning">BON</span><span class="text-light">JOURS!</span></h1>
+        <p class="text-light">VEUILLEZ REMPLIR LES INFORMATION REQUISE POUR VOTRE RESERVATION DANS NOTRE FLAT HOTEL.</p>
+  
+        <form action="" method="get" class="form-group">
+  
+          <div class="row block-contenu">
+            <div class="col-md-4 anime1">
+              <label for="nom">Nom</label><br>
+              <input type="text" name="nom" id="nom" placeholder="Inserez votre nom" required class="form-control text-light" ><br>
+              <label for="prenom">Prenom</label><br>
+              <input type="text" name="prenom" id="prenom" placeholder="Inserez votre prenom" required class="form-control text-light"><br>
+              <label for="postnom">Post-nom</label><br>
+              <input type="text" name="postnom" id="postnom" placeholder="Inserez votre postnom" required class="form-control text-light"><br>
+              <label for="mail">Mail</label><br>
+              <input type="mail" name="mail" id="mail" placeholder="Inserez votre mail" required class="form-control text-light"><br>
+            </div>
+    
+            <div class="col-md-4">
+              <label for="nombre">Nombre de personne</label><br>
+              <input type="momber" name="nombre" id="nombre" placeholder="Inserez les nombre de personne" required class="form-control text-light" ><br>
+              <label for="date_start">Date d'arrivée</label><br>
+              <input type="date" name="date_start" id="date_start" required class="form-control text-dark"><br>
+              <label for="date_end">Date d'arrivée</label><br>
+              <input type="date" name="date_end" id="date_end" required class="form-control text-dark"><br>
+            </div>
+    
+            <div class="col-md-4">
+              <label for="chambre">Categorie de chambre</label><br>
+              <select name="chambre" id="chmabre" class="form-control text-dark">
+                <option value="chambre standard">Chambre standard</option>
+                <option value="chambre de luxe">Chambre de luxe</option>
+                <option value="suite penthouse">Suite penthouse</option>
+              </select><br>
+              <button type="submit" class="res">Reserver</button>
+            </div>
+
+            </div>
+
+          </div>
+        </form>
+  
+        <nav class="navbar navbar-dark fixed-top" aria-label="Dark offcanvas navbar">
+          <div class="container">
+            <a class="navbar-brand title fs-5" href="#"><span style="color: orange;">HOTEL</span>ELITE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Menu</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item px-3 my-3" syle="border-radius: 10px;background-color: #edad29;">
+                    <a class="nav-link active" aria-current="page" href="../index.html"><i class="fas fa-home me-3"></i> Acceuil</a>
+                  </li>
+                  <!-- <li class="px-3">
+                    <a href="activiter.html" class="nav-link">
+                      <i class="fas fa-project-diagram  me-3"></i>
+                      Activités
+                    </a>
+                  </li> -->
+                  <li class="px-3">
+                      <a href="service.html" class="nav-link">
+                        <i class="fas fa-ambulance  me-3"></i>
+                        Services
+                      </a>
+                    </li>
+                    <li class="px-3">
+                      <a href="chambre.html" class="nav-link">
+                        <i class="fas fa-procedures  me-3"></i>
+                        Chambres
+                      </a>
+                    </li>
+                    </li>
+                    <li class="px-3">
+                      <a href="promotion.html" class="nav-link">
+                        <i class="fas fa-bullhorn  me-3"></i>
+                        Promotion
+                      </a>
+                    </li>
+                    <li class="px-3">
+                      <a href="notification.html" class="nav-link">
+                        <i class="fas fa-bell  me-3"></i>
+                        Notifications
+                      </a>
+                    </li>
+                    <li class="px-3">
+                      <a href="apropos.html" class="nav-link">
+                        <i class="fas fa-info-circle  me-3"></i>
+                        A propos de Nous 
+                      </a>
+                    </li>
+                    <li class="px-3">
+                      <a href="page/aide.html" class="nav-link">
+                        <i class="fas fa-question  me-3"></i>
+                        Aide
+                      </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+  
+    </div>
+
+    <script src="../dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../source/js/scrollreveal.min.js"></script>
+    <script src="../source/js/reveal.js"></script>
+</body>
+</html>

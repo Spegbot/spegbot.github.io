@@ -1,0 +1,175 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TP | programmation web</title>
+        <link rel="stylesheet" href="../dist/css/all.css">
+        <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../source/css/aide.css">
+    </head>
+
+    <!-- °°°°°°°°°°°°°°°°°°°°°°°°°°° -->
+    <body>
+    <div class="container" style="padding-top: 70px;">
+        <div class="row">
+            <div class="col">
+                <div class="pt-5">
+                    <h1>Besoin d'aide ?</h1>
+                    <p>Nous sommes à votre service pour vous apporter la solution !</p>
+                    <div class="mt-5 block-contenu">       
+                      <div class="mx-3">
+                        <h3>Cherchez-vous peut-etre :</h3>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-head">
+                                        <h3>Nos Services</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div style="display: flex;justify-content: space-between;">
+                                            <img src="../img/salon1.jpg" alt="">
+                                            <img src="../img/chambre.webp" alt="">
+                                            <img src="../img/restau.webp" alt="">
+                                            <img src="../img/rest.webp" alt="">
+                                        </div>
+                                        <div class="my-4">
+                                            <button class="btn btn-success w-100">Voir nos services</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-head">
+                                        <h3>Reservation</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div style="display: flex;justify-content: space-between;">
+                                            <img src="../img/salon1.jpg" alt="">
+                                            <img src="../img/salon3.jpg" alt="">
+                                            <img src="../img/chambre.webp" alt="">
+                                            <img src="../img/gg.jpg" alt="">
+                                        </div>
+                                        <div class="my-4">
+                                            <button class="btn btn-success w-100">Consulter la page</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                      </div>
+                    </div>
+                        
+                </div>
+            </div>
+            <div class="col">
+                <div class="block-trans">
+                    <h3>Faite nous un feed back du problème rencontrer</h3>
+                    <div class="blockform mt-4">
+                        <div class="form-group  mt-lg-2">
+                            <input type="text" class="form-control"placeholder="Entrez votre adress email">
+                        </div>
+                        <div class="form-group  mt-lg-2">
+                            <input type="text" class="form-control"placeholder="Entrez votre nom">
+                        </div>
+                        <div class="mt-4 p-2" style="text-align: left;border-radius: 5px;border: 1px solid rgb(8, 226, 95);">
+                            <h3>Type de probleme</h3>
+                            <div style="display: flex;justify-content: space-between;">
+                                <div class="d-inline-block">
+                                    <input type="radio" name="q" id="radio1"><label for="radio1">Generale</label>
+                                </div>
+                                <div class="d-inline-block">
+                                    <input type="radio" name="q" id="radio2"><label for="radio2">Question Personnel</label>
+                                </div>
+                                <div class="d-inline-block">
+                                    <input type="radio" name="q" id="radio3"><label for="radio3">Autres</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt-lg-2">
+                            <textarea id="msg"style="height: 100px;" name="" id="" cols="30" rows="10" class="form-control"placeholder="Explique brievement votre probleme"></textarea>
+                        </div>
+                        <button class="btn btn-success w-100 mt-3">Envoyer le commentaires</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-dark fixed-top" aria-label="Dark offcanvas navbar">
+        <div class="container">
+          <a class="navbar-brand title fs-5" href="#"><span style="color: orange;">HOTEL</span>ELITE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Menu</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item px-3 my-3" syle="border-radius: 10px;background-color: #edad29;">
+                  <a class="nav-link active" aria-current="page" href="../index.html"><i class="fas fa-home me-3"></i> Acceuil</a>
+                </li>
+                <!-- <li class="px-3">
+                  <a href="activiter.html" class="nav-link">
+                    <i class="fas fa-project-diagram  me-3"></i>
+                    Activités
+                  </a>
+                </li> -->
+                <li class="px-3">
+                    <a href="service.html" class="nav-link">
+                      <i class="fas fa-ambulance  me-3"></i>
+                      Services
+                    </a>
+                  </li>
+                  <li class="px-3">
+                    <a href="chambre.html" class="nav-link">
+                      <i class="fas fa-procedures  me-3"></i>
+                      Chambres
+                    </a>
+                  </li>
+                  <li class="px-3">
+                    <a href="reservation.html" class="nav-link">
+                      <i class="fas fa-calendar-check  me-3"></i>
+                      Reservation
+                    </a>
+                  </li>
+                  <li class="px-3">
+                    <a href="promotion.html" class="nav-link">
+                      <i class="fas fa-bullhorn  me-3"></i>
+                      Promotion
+                    </a>
+                  </li>
+                  <li class="px-3">
+                    <a href="notification.html" class="nav-link">
+                      <i class="fas fa-bell  me-3"></i>
+                      Notifications
+                    </a>
+                  </li>
+                  <li class="px-3">
+                    <a href="apropos.html" class="nav-link">
+                      <i class="fas fa-info-circle  me-3"></i>
+                      A propos de Nous 
+                    </a>
+                  </li>
+                  <li class="px-3">
+                    <a href="aide.html" class="nav-link">
+                      <i class="fas fa-question  me-3"></i>
+                      Aide
+                    </a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+        <script src="../dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
